@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No 1</title>
+</head>
+<body>
+
+  <script>
+    function bilanganCacah(N) {
+      let numbers = [];
+
+      for (let i = 1; numbers.length < N; i++) {
+        if (i % 3 === 0 && i % 7 === 0) {
+          numbers.push("Z");
+        } else if (i % 3 === 0 || i % 7 === 0) {
+          numbers.push(i);
+        }
+      }
+
+      return numbers;
+    }
+
+    let N = 13;
+    let output = bilanganCacah(N);
+    console.log(output.join(", "));
+  </script>
+  
+</body>
+</html>

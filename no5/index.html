@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No 5</title>
+</head>
+<body>
+
+  <script>
+    function pola(n) {
+      if (n % 2 === 0) {
+        return "Harus bilangan ganjil";
+      }
+
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        let text = "";
+        for (let j = 0; j < n; j++) {
+          if (i > 0 && i < n - 1 && j > 0 && j < n - 1) {
+            if (Math.abs(n - 1 - i) > j || Math.abs(n - 1 - i) < j) {
+              text += "O ";
+            } else {
+              text += "X ";
+            }
+          } else {
+            text += "X ";
+          }
+        }
+        result += text + "\n";
+      }
+      return result;
+    }
+
+    console.log(pola(5));
+    console.log(pola(3));
+    console.log(pola(7));
+    console.log(pola(2));
+  </script>
+  
+</body>
+</html>

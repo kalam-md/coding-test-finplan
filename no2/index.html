@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No 2</title>
+</head>
+<body>
+
+  <script>
+    function searchWord(text) {
+    const animals = ["sang gajah", "serigala", "harimau"];
+    const results = [];
+
+    text = text.toLowerCase();
+
+    animals.forEach(function(animal) {
+      let startIndex = text.indexOf(animal);
+
+      while (startIndex !== -1) {
+        results.push(animal);
+        startIndex = text.indexOf(animal, startIndex + 1);
+      }
+    });
+
+    return results.join(" - ");
+  }
+
+  const text = "Berikut adalah kisah sang gajah. Sang gajah memiliki teman serigala bernama DoeSang. Gajah sering dibela oleh serigala ketika harimau mendekati gajah.";
+  const results = searchWord(text);
+
+  console.log(results);
+
+  </script>
+  
+</body>
+</html>

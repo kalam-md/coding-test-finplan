@@ -1,0 +1,13 @@
+1. apa itu bilangan cacah
+2. cara menyatukan string menggunakan - di javascript
+3. authentikasi password pada javascript
+4. apa itu regex
+5. implementasi regex pada javascript
+6. aritmatika cek bilangan cacah terkecil
+7. apa itu rekursif dalam javascript
+8. membuat pola dari rekursif javascript
+9. cara membuat readme.md
+10. install tailwind, react, vite
+11. cara menggunakan react router
+12. cara menggunakan webcam pada react js
+13. cara menyimpan file di localStorage
